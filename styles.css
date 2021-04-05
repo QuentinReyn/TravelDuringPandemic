@@ -1,0 +1,83 @@
+header{
+  height: 120px;
+  min-width: 120px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+/** Dark CSS */
+
+.dark {
+  background-color: #202020d8;
+  color: #ffffff;
+}
+
+.dark button {
+  background: #202020d8;
+  color: #fff;
+}
+
+.ui-autocomplete {
+  z-index: 1;
+  list-style: none;
+  background-color: #202020d8;
+  opacity: 1;
+  width:200px;
+}
+
+.container {
+  display: flex;
+}
+.fixed {
+  width: 400px;
+  background-color: rgba(228, 226, 226, 0.911);
+}
+.flex-item {
+  flex-grow: 1;
+}
+
+/* Styling the checkbox input */
+.checkbox-mode{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  appearance: none;
+  -webkit-appearance : none;
+  -moz-appearance : none;
+  -o-appearance : none;
+  width: 80px;
+  height: 40px;
+  background: black;
+  border-radius: 22px;
+  cursor: pointer;
+  outline: none;
+}
+/* styling the circle inside the checkbox input */
+.checkbox-mode::before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background-color:white;
+  border-radius: 35px;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+/* moving the checkbox circle when it's toggled by the user */
+.checkbox-mode:checked::before{
+  left: 40px;
+}
+/* changing the color of the checkbox when it's toggled */
+.checkbox-mode:checked{
+  background: rgb(12, 177, 81);
+}
